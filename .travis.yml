@@ -1,3 +1,4 @@
+# 책 323page 에서는 travis-ci.org 로 진행하였으나 이 프로젝트는 travis.com으로 진행
 language: java
 jdk:
   - openjdk8
@@ -17,4 +18,5 @@ notifications:
   email:
     recipients:
       - sungwoony@kakao.com
+
 
