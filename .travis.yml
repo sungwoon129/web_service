@@ -27,6 +27,7 @@ before_deploy:
   - mkdir -p deploy
   - mv web_service.zip deploy/web_service.zip
 
+# S3로 파일업로드 혹은 CodeDeploy로 배포 등 외부서비스와 연동될 행위들을 선언
 deploy:
   -provider: s3
    access_key_id: $AWS_ACCESS_KEY # Travis repo settings에 설정된 값
