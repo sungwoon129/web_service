@@ -4,8 +4,6 @@ ABSPATH=$(readlink -f $0)
 ABSDIR=$(dirname $ABSPATH)
 source ${ABSDIR}/profile.sh
 
-#expected running : real2
-
 REPOSITORY=/home/ec2-user/app/step3
 PROJECT_NAME=web_service
 
@@ -24,8 +22,6 @@ echo "> $JAR_NAME 에 실행권한 추가"
 chmod +x $JAR_NAME
 
 echo "> $JAR_NAME 실행"
-
-echo "> IDLE_PROFILE 테스트"
 
 IDLE_PROFILE=$(find_idle_profile)
 
